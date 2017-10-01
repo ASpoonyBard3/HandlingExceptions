@@ -32,6 +32,13 @@ namespace HandlingExceptions
                 Console.WriteLine("There was a problem!");
                 Console.WriteLine(ex.Message);
             }
+            finally
+            {
+                //code to finalise
+                //setting objects to null
+                // closing databases connections
+                Console.WriteLine("Closing applications now....");
+            }
             Console.ReadLine();
         }
     }
